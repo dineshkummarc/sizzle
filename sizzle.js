@@ -1109,8 +1109,7 @@ Sizzle.getText = function( elems ) {
 	div = null;
 })();
 
-if ( false// document.querySelectorAll
-   ) {
+if ( document.querySelectorAll ) {
 	(function(){
 		var oldSizzle = Sizzle,
 			div = document.createElement("div"),
