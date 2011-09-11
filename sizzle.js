@@ -821,6 +821,8 @@ var Expr = Sizzle.selectors = {
 
 			return result == null ?
 				type === "!=" :
+				!type && Sizzle.attr ?
+				result != null :
 				type === "=" ?
 				value === check :
 				type === "*=" ?
